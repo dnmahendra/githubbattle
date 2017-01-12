@@ -1,19 +1,30 @@
 {
-  "name": "y",
+  "name": "gitbattle",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "production": "webpack -p",
-    "start": "webpack-dev-server"
+    "dev": "webpack-dev-server",
+    "postinstall": "webpack -p",
+    "start": "node server.js"
   },
-  "author": "",
+  "author": "mahendra",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.9.1",
+    "express": "4.14.0",
     "react": "^15.0.1",
-    "react-dom": "^15.0.1",
-    "react-router": "^2.0.1"
+    "react-dom": "^15.4.2",
+    "react-router": "^2.0.1",
+    "webpack": "^1.12.14",
+    "react-addons-css-transition-group": "^0.14.6",
+    "html-webpack-plugin": "^2.15.0",
+    "babel-core": "^6.7.6",
+    "babel-loader": "^6.2.4",
+    "babel-preset-react": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "style-loader": "^0.13.0"
   },
   "devDependencies": {
     "babel-core": "^6.7.6",

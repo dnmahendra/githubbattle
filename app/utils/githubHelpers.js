@@ -1,9 +1,8 @@
 var axios = require('axios');
 
-
 var id = "";
 var sec = "";
-var param = "?client_id=" + id + "&client_secret=" + sec; 
+var param = "?client_id=" + id + "&client_secret=" + sec;
 
 function getUserInfo(username) {
   return axios.get('https://api.github.com/users/' + username);
@@ -49,7 +48,7 @@ var helpers = {
       })
     }).catch(function(err) {
       console.warn('Error in getPlayersInfo' + err);
-    }) 
+    })
   },
   battle: function (players) {
     var playerOneData = getPlayersData(players[0]);
